@@ -1,13 +1,454 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./css/styles.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="bg-#FFFFFF py-6 lg:py-12 uppercase">
+      <!-- Header Container -->
+      <div
+        class="container flex items-center justify-between space-x-8 lg:space-x-16"
+      >
+        <!-- Logo -->
+        <a href="#" class="pl-4 md:pl-0 text-4xl lg:text-6xl font-bold"
+          >PerecMen</a
+        >
+
+        <!-- Mobile Menü -->
+        <div class="block md:hidden pr-4">
+          <div class="space-y-1 cursor-pointer">
+            <div class="bg-blue-900 w-8 h-1 rounded-full">
+              <div class="bg-blue-900 w-8 h-1 rounded-full">
+                <div class="bg-blue-900 w-8 h-1 rounded-full"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="hidden md:flex justify-between flex-1">
+          <!-- Menü -->
+          <div class="flex items-center lg:text-lg space-x-4 lg:space-x-8">
+            <a href="#" class="hover:text-blue-500 transition duration-500"
+              >Hakkımızda</a
+            >
+            <a href="#" class="hover:text-blue-500 transition duration-500"
+              >İletişim</a
+            >
+            <a href="#" class="hover:text-blue-500 transition duration-500"
+              >Konseptimiz</a
+            >
+          </div>
+          <!-- Login Area -->
+          <div class="flex items-center space-x-4 lg:space-x-8">
+            <!-- Search Area -->
+            <form>
+              <div class="group border-r px-4 mx-4 py-1 border-blue-500">
+                <input
+                  type="text"
+                  class="opacity-0 group-hover:opacity-100 bg-transparent border-b border-blue-500 focus:outline-none w-24 lg:w-44 transition duration-500"
+                />
+                <button class="-ml-4 group-hover:ml-0 transition duration-500">
+                  <i
+                    class="fas fa-search group-hover:text-blue-500 transition duration-500"
+                  ></i>
+                </button>
+              </div>
+            </form>
+            <!-- Sign Up Area -->
+            <div class="flex items-center space-x-4 lg:space-x-8 lg:text-lg">
+              <a href="#">Login</a>
+              <a
+                href="#"
+                class="bg-blue-500 px-3 py-1 hover:bg-blue-600 hover:text-blue-900 transition duration-500 whitespace-nowrap"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- card -->
+    <section class="uppercase text-bl">
+      <div class="container page-wrapper">
+        <div class="page-inner">
+          <div class="row">
+            <div class="el-wrapper">
+              <div class="box-up">
+                <img class="img" src="images/perec1.jpg" alt="" />
+                <div class="img-info">
+                  <div class="info-inner">
+                    <span class="p-name">I feel like Perec</span>
+                    <span class="p-company">PerecMen</span>
+                  </div>
+                  <div class="a-size">
+                    Available sizes : <span class="size">S , M , L , XL</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box-down">
+                <div class="h-bg">
+                  <div class="h-bg-inner"></div>
+                </div>
+
+                <a class="cart" href="#">
+                  <span class="price">$120</span>
+                  <span class="add-to-cart">
+                    <span class="txt">add to Basket</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container page-wrapper">
+        <div class="page-inner">
+          <div class="row">
+            <div class="el-wrapper">
+              <div class="box-up">
+                <img class="img" src="images/perec2.jpg" alt="" />
+                <div class="img-info">
+                  <div class="info-inner">
+                    <span class="p-name">I feel like Perec</span>
+                    <span class="p-company">PerecMen</span>
+                  </div>
+                  <div class="a-size">
+                    Available sizes : <span class="size">S , M , L , XL</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box-down">
+                <div class="h-bg">
+                  <div class="h-bg-inner"></div>
+                </div>
+
+                <a class="cart" href="#">
+                  <span class="price">$120</span>
+                  <span class="add-to-cart">
+                    <span class="txt">add to basket</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container page-wrapper">
+        <div class="page-inner">
+          <div class="row">
+            <div class="el-wrapper">
+              <div class="box-up">
+                <img class="img" src="images/perec3.jpg" alt="" />
+                <div class="img-info">
+                  <div class="info-inner">
+                    <span class="p-name">I feel like Perec</span>
+                    <span class="p-company">PerecMen</span>
+                  </div>
+                  <div class="a-size">
+                    Available sizes : <span class="size">S , M , L , XL</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box-down">
+                <div class="h-bg">
+                  <div class="h-bg-inner"></div>
+                </div>
+
+                <a class="cart" href="#">
+                  <span class="price">$120</span>
+                  <span class="add-to-cart">
+                    <span class="txt">Add in basket</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container page-wrapper">
+        <div class="page-inner">
+          <div class="row">
+            <div class="el-wrapper">
+              <div class="box-up">
+                <img class="img" src="images/perec4.jpg" alt="" />
+                <div class="img-info">
+                  <div class="info-inner">
+                    <span class="p-name">I feel like Perec</span>
+                    <span class="p-company">PerecMen</span>
+                  </div>
+                  <div class="a-size">
+                    Available sizes : <span class="size">S , M , L , XL</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box-down">
+                <div class="h-bg">
+                  <div class="h-bg-inner"></div>
+                </div>
+
+                <a class="cart" href="#">
+                  <span class="price">$120</span>
+                  <span class="add-to-cart">
+                    <span class="txt">Add in basket</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container page-wrapper">
+        <div class="page-inner">
+          <div class="row">
+            <div class="el-wrapper">
+              <div class="box-up">
+                <img class="img" src="images/perec3.jpg" alt="" />
+                <div class="img-info">
+                  <div class="info-inner">
+                    <span class="p-name">I feel like Perec</span>
+                    <span class="p-company">PerecMen</span>
+                  </div>
+                  <div class="a-size">
+                    Available sizes : <span class="size">S , M , L , XL</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box-down">
+                <div class="h-bg">
+                  <div class="h-bg-inner"></div>
+                </div>
+
+                <a class="cart" href="#">
+                  <span class="price">$120</span>
+                  <span class="add-to-cart">
+                    <span class="txt">Add in basket</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container page-wrapper">
+        <div class="page-inner">
+          <div class="row">
+            <div class="el-wrapper">
+              <div class="box-up">
+                <img class="img" src="images/perec4.jpg" alt="" />
+                <div class="img-info">
+                  <div class="info-inner">
+                    <span class="p-name">I feel like Perec</span>
+                    <span class="p-company">PerecMen</span>
+                  </div>
+                  <div class="a-size">
+                    Available sizes : <span class="size">S , M , L , XL</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box-down">
+                <div class="h-bg">
+                  <div class="h-bg-inner"></div>
+                </div>
+
+                <a class="cart" href="#">
+                  <span class="price">$120</span>
+                  <span class="add-to-cart">
+                    <span class="txt">Add in cart</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container page-wrapper">
+        <div class="page-inner">
+          <div class="row">
+            <div class="el-wrapper">
+              <div class="box-up">
+                <img class="img" src="images/perec3.jpg" alt="" />
+                <div class="img-info">
+                  <div class="info-inner">
+                    <span class="p-name">I feel like Perec</span>
+                    <span class="p-company">PerecMen</span>
+                  </div>
+                  <div class="a-size">
+                    Available sizes : <span class="size">S , M , L , XL</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box-down">
+                <div class="h-bg">
+                  <div class="h-bg-inner"></div>
+                </div>
+
+                <a class="cart" href="#">
+                  <span class="price">$120</span>
+                  <span class="add-to-cart">
+                    <span class="txt">Add in basket</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container page-wrapper">
+        <div class="page-inner">
+          <div class="row">
+            <div class="el-wrapper">
+              <div class="box-up">
+                <img class="img" src="images/perec3.jpg" alt="" />
+                <div class="img-info">
+                  <div class="info-inner">
+                    <span class="p-name">I feel like Perec</span>
+                    <span class="p-company">PerecMen</span>
+                  </div>
+                  <div class="a-size">
+                    Available sizes : <span class="size">S , M , L , XL</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box-down">
+                <div class="h-bg">
+                  <div class="h-bg-inner"></div>
+                </div>
+
+                <a class="cart" href="#">
+                  <span class="price">$120</span>
+                  <span class="add-to-cart">
+                    <span class="txt">Add in basket</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <header>
+      <!-- Content -->
+    </header>
+
+    <main>
+      <!-- Content -->
+    </main>
+
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Georges Perec</h1>
+
+        <h2>Contact</h2>
+
+        <address>
+          7895 Somewhere In. The World 28393-12212<br />
+
+          <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+        </address>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Media</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Online</a>
+            </li>
+
+            <li>
+              <a href="#">Print</a>
+            </li>
+
+            <li>
+              <a href="#">Alternative Ads</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item nav__item--extra">
+          <h2 class="nav__title">Technology</h2>
+
+          <ul class="nav__ul nav__ul--extra">
+            <li>
+              <a href="#">Hardware Design</a>
+            </li>
+
+            <li>
+              <a href="#">Software Design</a>
+            </li>
+
+            <li>
+              <a href="#">Digital Signage</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="legal">
+        <p>&copy; 2023 Something. All rights reserved.</p>
+
+        <div class="legal__links">
+          <span
+            >Made with <span class="heart">AFT</span> remotely from
+            Anywhere</span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

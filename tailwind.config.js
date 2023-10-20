@@ -2,7 +2,17 @@
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
-    extend: {},
+
+    container: {
+      center: true,
+    },
+    
+    extend: {    //temaya ek bir özellik olarak istediğimiz fontu ekliyoruz
+      fontFamily: {
+        montserrat: [ 'Montserrat', 'sans-serif'],
+        open: []
+      }
+    },
   },
   plugins: [],
 }
